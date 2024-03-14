@@ -5,7 +5,7 @@ const { exec } = require('child_process'); // Import exec from child_process
 // Get the "Campaign id" argument from command-line arguments
 const campaignId = process.argv[2]; // The first argument after the script name
 const name = process.argv[3]; // The second argument after the script name
-
+console.log(`script started to update campaign ${campaignId}`);
 // Check if "Campaign id" argument is provided
 if (!campaignId) {
     console.error('Campaign id is missing. Please provide the Campaign id as an argument.');
