@@ -1,0 +1,32 @@
+-- string list js:
+
+-- string: //unpkg.com/web3@1.2.11/dist/web3.min.js:type=text/javascript
+-- string: //unpkg.com/web3modal@1.9.0/dist/index.js:type=text/javascript
+-- string: //unpkg.com/evm-chains@0.2.0/dist/umd/index.min.js:type=text/javascript
+;;-- string: //unpkg.com/@walletconnect/web3-provider@1.2.1/dist/umd/index.min.js:type=text/javascript
+-- string: //unpkg.com/fortmatic@2.0.6/dist/fortmatic.js:type=text/javascript
+-- string: distribution/templates/template-1/js/web3-provider.js:type=text/javascript
+-- string: distribution/templates/template-1/js/index.js:type=module
+
+-- end: js
+
+-- void connectWallet():
+js: $js
+
+connectWallet()
+
+-- void sendWallet():
+js: $js
+
+sendWallet()
+
+-- void navigateToComponent(elementId):
+string elementId:
+js: $js
+
+navigateToComponent(elementId)
+
+-- void viewNftInOpensea():
+js: $js
+
+viewNftInOpensea()

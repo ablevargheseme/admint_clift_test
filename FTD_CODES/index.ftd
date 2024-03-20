@@ -1,3 +1,133 @@
--- import: able.fifthtry.site/sitedata/distribution/10002/data 
+-- import: able.fifthtry.site/assets
+-- import: able.fifthtry.site/lib
+-- import: able.fifthtry.site/colors as colors
+-- import: able.fifthtry.site/images as images
+-- import: able.fifthtry.site/texts as texts
+-- import: able.fifthtry.site/functions as funct
+-- import: able.fifthtry.site/fonts as fonts
 
--- ftd.text: $data.var
+-- string $loadedState: loading
+
+;; -- ftd.text: $colors.main.accent.primary.dark
+
+;;-- ftd.text: $loadedState
+
+-- lib.window-popup:
+pic: $images.popup-image
+title: $texts.popup-title
+body : $texts.popup-body
+
+-- lib.app-state:
+$loadedState: $loadedState
+
+-- lib.loader:
+if: { $loadedState == "loading" }
+
+-- lib.page:
+if: { $loadedState == "loaded" }
+
+-- lib.hero: $texts.templateEditorRecordObj.cmsHeroSection-1.hero-highlighted-text
+heading: $texts.templateEditorRecordObj.cmsHeroSection-1.hero-text
+cover: $texts.templateEditorRecordObj.cmsHeroSection-1.hero-image-url
+;;cover: https://i.pinimg.com/236x/f6/16/d0/f616d044c7937dde2e8ec2b4f3e6f79c.jpg
+;;cover: https://www.shutterstock.com/image-photo/super-wide-panorama-new-york-260nw-525241378.jpg
+content: $texts.templateEditorRecordObj.cmsHeroSection-1.sub-hero-text
+
+-- lib.nft-details: $texts.templateEditorRecordObj.cmsNFTDetails-1.title-text
+pic: $images.nft-image-url
+;;pic: https://i.pinimg.com/236x/f6/16/d0/f616d044c7937dde2e8ec2b4f3e6f79c.jpg
+;;pic: https://www.shutterstock.com/image-photo/super-wide-panorama-new-york-260nw-525241378.jpg
+text-1: **Blockchain** : 
+text-2: **POA Type** : 
+val-1: Polygon
+val-2: $texts.nft-type
+button-1: $texts.templateEditorRecordObj.cmsNFTDetails-1.button-text
+button-2: View NFT
+body: $texts.templateEditorRecordObj.cmsNFTDetails-1.title-description-text
+
+-- lib.event-details: $texts.templateEditorRecordObj.cmsEventDetails-1.title-text
+pic: $texts.templateEditorRecordObj.cmsEventDetails-1.event-details-image
+;;pic: https://i.pinimg.com/236x/f6/16/d0/f616d044c7937dde2e8ec2b4f3e6f79c.jpg
+;;pic: https://www.shutterstock.com/image-photo/super-wide-panorama-new-york-260nw-525241378.jpg
+heading: $texts.templateEditorRecordObj.cmsEventDetails-1.event-date
+icon: $assets.files.images.location_on-black.png
+text: $texts.templateEditorRecordObj.cmsEventDetails-1.title-description-text
+counter: $texts.templateEditorRecordObj.cmsEventDetails-1.button-text
+reminder: Time Left to claim NFT
+
+-- lib.container-with-title: $texts.templateEditorRecordObj.cmsHowToClaim-1.title-text
+$id: howtoclaim
+
+-- lib.step: $texts.templateEditorRecordObj.cmsClaimStep1-1.title-text
+pic: $texts.templateEditorRecordObj.cmsClaimStep1-1.how-to-claim-step-1-image-url
+;;pic: https://i.pinimg.com/236x/f6/16/d0/f616d044c7937dde2e8ec2b4f3e6f79c.jpg
+;;pic: https://www.shutterstock.com/image-photo/super-wide-panorama-new-york-260nw-525241378.jpg
+number: $texts.templateEditorRecordObj.cmsClaimStep1-1.count-text
+body: $texts.templateEditorRecordObj.cmsClaimStep1-1.description-text
+
+-- lib.step-2: $texts.templateEditorRecordObj.cmsClaimStep2-1.title-text
+pic: $texts.templateEditorRecordObj.cmsClaimStep2-1.how-to-claim-step-2-image-url
+;;pic: https://i.pinimg.com/236x/f6/16/d0/f616d044c7937dde2e8ec2b4f3e6f79c.jpg
+;;pic: https://www.shutterstock.com/image-photo/super-wide-panorama-new-york-260nw-525241378.jpg
+number: $texts.templateEditorRecordObj.cmsClaimStep2-1.count-text
+body: $texts.templateEditorRecordObj.cmsClaimStep2-1.description-text
+
+-- lib.step: $texts.templateEditorRecordObj.cmsClaimStep3-1.title-text
+pic: $texts.templateEditorRecordObj.cmsClaimStep3-1.how-to-claim-step-3-image-url
+number: $texts.templateEditorRecordObj.cmsClaimStep3-1.count-text
+body: $texts.templateEditorRecordObj.cmsClaimStep3-1.description-text
+
+
+-- end: lib.container-with-title
+
+-- lib.about: $texts.templateEditorRecordObj.cmsAboutSection-1.title-text
+pic: $texts.templateEditorRecordObj.cmsAboutSection-1.about-us-image-url
+;;pic: https://i.pinimg.com/236x/f6/16/d0/f616d044c7937dde2e8ec2b4f3e6f79c.jpg
+;;pic: https://www.shutterstock.com/image-photo/super-wide-panorama-new-york-260nw-525241378.jpg
+body: $texts.templateEditorRecordObj.cmsAboutSection-1.description-text
+
+-- lib.container-with-title: $texts.templateEditorRecordObj.cmsFAQSection-1.section-title-text
+$id: faq
+
+-- lib.faq: $texts.templateEditorRecordObj.cmsFAQSection-1.question-1-text
+body: $texts.templateEditorRecordObj.cmsFAQSection-1.description-1-text
+
+-- lib.faq: $texts.templateEditorRecordObj.cmsFAQSection-1.question-2-text
+body: $texts.templateEditorRecordObj.cmsFAQSection-1.description-2-text
+
+-- lib.faq: $texts.templateEditorRecordObj.cmsFAQSection-1.question-3-text
+body: $texts.templateEditorRecordObj.cmsFAQSection-1.description-3-text
+
+-- lib.faq: $texts.templateEditorRecordObj.cmsFAQSection-1.question-4-text
+body: $texts.templateEditorRecordObj.cmsFAQSection-1.description-4-text
+
+-- lib.faq: $texts.templateEditorRecordObj.cmsFAQSection-1.question-5-text
+body: $texts.templateEditorRecordObj.cmsFAQSection-1.description-5-text
+
+-- lib.faq: $texts.templateEditorRecordObj.cmsFAQSection-1.question-6-text
+body: $texts.templateEditorRecordObj.cmsFAQSection-1.description-6-text
+
+-- lib.faq: $texts.templateEditorRecordObj.cmsFAQSection-1.question-7-text
+body: $texts.templateEditorRecordObj.cmsFAQSection-1.description-7-text
+
+-- lib.faq: $texts.templateEditorRecordObj.cmsFAQSection-1.question-8-text
+body: $texts.templateEditorRecordObj.cmsFAQSection-1.description-8-text
+
+-- lib.faq: $texts.templateEditorRecordObj.cmsFAQSection-1.question-9-text
+body: $texts.templateEditorRecordObj.cmsFAQSection-1.description-9-text
+
+-- lib.faq: $texts.templateEditorRecordObj.cmsFAQSection-1.question-10-text
+body: $texts.templateEditorRecordObj.cmsFAQSection-1.description-10-text
+
+-- end: lib.container-with-title
+
+-- end: lib.page
+
+-- lib.tc-popup:
+title: $texts.templateEditorRecordObj.cmsTermsConditions-1.title-text
+head: $texts.templateEditorRecordObj.cmsTermsConditions-1.event-details
+body: $texts.templateEditorRecordObj.cmsTermsConditions-1.description-text
+
+
+
+

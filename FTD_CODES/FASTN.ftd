@@ -1,3 +1,33 @@
 -- import: fastn
 
 -- fastn.package: able.fifthtry.site
+
+
+
+-- fastn.dependency: fifthtry.github.io/admint-cs
+-- fastn.dependency: fifthtry.github.io/montserrat
+-- fastn.dependency: fifthtry.github.io/admint-typography
+-- fastn.dependency: fifthtry.github.io/doc-site
+-- fastn.dependency: fifthtry.github.io/footer
+-- fastn.dependency: fifthtry.github.io/color-doc
+-- fastn.dependency: fastn-community.github.io/dark-mode-switcher as dms 
+
+-- fastn.dependency: fastn-community.github.io/opensans-typography
+
+-- fastn.dependency: fifthtry.github.io/admint-nunito-font
+-- fastn.dependency: fastn-community.github.io/karma-font
+-- fastn.dependency: fastn-community.github.io/lobster-font
+-- fastn.dependency: fastn-community.github.io/blaka-font
+-- fastn.dependency: fastn-community.github.io/arya-font
+-- fastn.dependency: fastn-community.github.io/roboto-font
+-- fastn.dependency: fastn-community.github.io/roboto-mono-font
+-- fastn.dependency: fastn-community.github.io/tiro-font
+-- fastn.dependency: fastn-community.github.io/pragati-narrow-font
+-- fastn.dependency: fastn-community.github.io/opensans-font
+-- fastn.dependency: fastn-community.github.io/khand-font
+-- fastn.dependency: fastn-community.github.io/lato-font
+-- fastn.dependency: fastn-community.github.io/inter-font
+-- fastn.dependency: fifthtry.github.io/lato-font
+-- fastn.dependency: fifthtry.github.io/roboto-font
+
+-- fastn.auto-import: able.fifthtry.site/assets

@@ -1,0 +1,498 @@
+-- string $nft-type: .
+-- string $wallet-state: Connect Wallet
+-- string $popup-title: undefined
+-- string $popup-body: undefined
+
+-- string $dummy6: Text
+
+-- string $dummy9: data:image/png;base64,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
+
+
+
+-- string $dummy1: Collect yours Now 
+
+-- string $dummy2: Claim Later!  
+
+-- string $dummy3: Home
+
+-- string $dummy4: POA
+
+-- string $dummy5: How to Claim
+
+-- string $dummy7: About Us
+
+-- string $dummy8: FAQs
+
+-- string $dummy10: images/logo.png
+
+-- string $dummy11: Connect Wallet
+
+-- string $dummy12: Building a resilient future through
+
+-- string $dummy13: Cyber Education
+
+-- string $dummy14: From safeguarding your personal data to protecting your community, our aim is to equip you with the latest cyber education tools & strategies. Let’s work together to build a resilient future - Be Secured, Stay Secured!”
+
+-- string $dummy15: images/hero.png
+
+-- string $dummy16: CYBERSECURITY CONFERENCE TOKEN
+
+-- string $dummy17: This POA or Proof of Attendance is a non-fungible token that proves you participated in the 2nd Regional Cybersecurity Conference conducted by The School of Computing, Holy Angel University on 10th May 2023.
+
+-- string $dummy18: Claim Now
+
+-- string $dummy19: 2nd Regional Cybersecurity Conference
+
+-- string $dummy20: University Theatre, SFJ Blog, Holy Angel University
+
+-- string $dummy21: 12 Days to go
+
+-- string $dummy22: images/conf.png
+
+-- string $dummy23: How to Claim
+
+-- string $dummy24: 01
+
+-- string $dummy25: Connect your wallet
+
+-- string $dummy26: You need a crypto browser wallet to access your token. In case you do not have a wallet, you can quickly set one up using the Torus wallet option. You can sign up to Torus with your existing email / social media accounts.
+
+-- string $dummy27: images/connect.png
+
+-- string $dummy28: 02
+
+-- string $dummy29: Claim NFT
+
+-- string $dummy30: To claim your token, connect your wallet and simply click on the “Claim Now” button. You will be notified in case of a successful claim or otherwise. Do note that you can only claim your token once.
+
+-- string $dummy31: images/claim.png
+
+-- string $dummy32: 03
+
+-- string $dummy33: View NFT
+
+-- string $dummy34: Once you have claimed your token, it will be transferred to your wallet over the next 24 hours. Connect again with the same wallet id you used to claim. Scroll down and click on the “View NFT” button to see your token.
+
+-- string $dummy35: images/view.png
+
+-- string $dummy36: About Us
+
+-- string $dummy37: On the 10th of May, the School of Computing conducted the 2nd Regional Cybersecurity Conference at the Holy Angel University (HAU) Theater. The conference invited various speakers from different industries who shared their experience and knowledge about Cybersecurity. It highlights the importance of digital safeguards empowerment and cybersecurity awareness in the digital age as cyber-attacks are becoming common in society. IT Education Heads, Faculty, Students, IT Professionals, and Cybersecurity enthusiasts from different schools and companies attended the event.
+
+-- string $dummy38: images/people.png
+
+-- string $dummy39: images/claim.png
+
+-- string $dummy40: images/claim.png
+
+-- string $dummy41: images/claim.png
+
+-- string $dummy42: images/claim.png
+
+-- string $dummy43: FAQs
+
+-- string $dummy44: What is a POA token?
+
+-- string $dummy45: A POA token, or Proof of Attendance token, is a non-fungible token (NFT) that is given to users as a way to prove that they attended a certain event. POA tokens are minted on a blockchain and are stored in users’ wallets. They can be displayed on social media or used to prove attendance for future events.
+
+-- string $dummy46: How do I claim the POA token?
+
+-- string $dummy47: To the token, you need to connect to the website using a crypto browser wallet - Metamask or Torus. After logging in simply claim and approve the transaction. Once done, the organizers will be able to send the POA NFT to you. The NFT should reflect in your wallet within 24 hours.
+
+-- string $dummy48: I don’t have a crypto wallet. How do I claim my token?
+
+-- string $dummy49: You can select the login with the Torus wallet option. Once selected you can simply login with any of your existing social accounts, and a wallet will be created for you. You can then proceed to claim the POA NFT.
+
+-- string $dummy50: How do I get a Metamask wallet?
+
+-- string $dummy51: You can download and install Metamask in your favorite browser here: https://metamask.io/download/ Follow the steps mentioned diligently. Do note down your private key details. Your private keys are the keys to your wallet. They allow you to access your cryptocurrency & NFTs. So it’s important to keep them safe. Never share your private keys with anyone.
+
+-- string $dummy52: How many times can I claim a token?
+
+-- string $dummy53: Your assigned NFT can be claimed only once. Hence it is very important that you do not share your unique URL with others as they could claim it on your behalf.
+
+-- string $dummy54: Which blockchain are these tokens minted on?
+
+-- string $dummy55: The POA token issued to you has been minted over the Polygon network.
+
+-- string $dummy56: Do I have to pay to claim this NFT?
+
+-- string $dummy57: There are no fees to claim these tokens. In the future, you may want to purchase a few Matic tokens as cryptocurrency (to pay as gas fees) if you wish to transfer the tokens to another wallet.
+
+-- string $dummy58: How long will it take for the NFT to reflect in my wallet?
+
+-- string $dummy59: After claiming the token successfully, the NFT will be sent into your wallet within the next 24 hours.
+
+-- string $dummy60: How can I use this POA token in the future?
+
+-- string $dummy61: Currently there are no utilities associated with the token. However we may choose to give NFT holders special privileges for future events & meetups.
+
+-- string $dummy62: Who do I get in touch with in case of any issues?
+
+-- string $dummy63: You can write in to the following email id: team@theblokc.com for any assistance related to getting the POA tokens.
+
+-- string $dummy64: https://www.linkedin.com/
+
+-- string $dummy65: https://www.youtube.com/
+
+-- string $dummy66: https://www.facebook.com/
+
+-- string $dummy67: images/linkedin-logo.svg
+
+-- string $dummy68: images/youtube-logo.svg
+
+-- string $dummy69: images/facebook-logo.svg
+
+-- string $dummy70: 2nd Regional Cybersecurity Conference at the Holy Angel University Proof of Attendance NFT (Non-Fungible Tokens)
+
+-- string $dummy71: Event Date: May 10, 2023
+
+-- string $dummy72: By claiming your Proof of Attendance (POA) NFT, you acknowledge that you have read, understood, and agreed to these terms and conditions.
+
+-- string $dummy73: May 10 2023
+
+///////////////////////////////////////////////// CMS Page Notification Ribbon ////////////////////////////////////////////////////
+
+-- record cmsNotificationRibbon:
+string text:
+string bold-text: 
+string bold-text-url: 
+
+
+-- cmsNotificationRibbon $cmsNotificationRibbonObj:
+string text: *$dummy1
+string bold-text: *$dummy2
+string bold-text-url: *$dummy6
+
+
+
+///////////////////////////////////////////////// CMS Page Navigation Bar ////////////////////////////////////////////////////
+
+-- record cmsNavigationBar:
+string link-1-text:
+string link-1-text-url:
+string link-2-text:
+string link-2-text-url:
+string link-3-text:
+string link-3-text-url:
+string link-4-text:
+string link-4-text-url:
+string link-5-text:
+string link-5-text-url:
+string button-text: 
+string logo-url:
+
+
+-- cmsNavigationBar $cmsNavigationBarObj:
+string link-1-text: *$dummy3
+string link-1-text-url: *$dummy6
+string link-2-text: *$dummy4
+string link-2-text-url: *$dummy6
+string link-3-text: *$dummy5
+string link-3-text-url: *$dummy6
+string link-4-text: *$dummy7
+string link-4-text-url: *$dummy6
+string link-5-text: *$dummy8
+string link-5-text-url: *$dummy6
+string button-text: *$dummy11
+string logo-url: *$dummy10
+
+
+///////////////////////////////////////////////// CMS Page Hero Section ////////////////////////////////////////////////////
+
+-- record cmsHeroSection:
+string hero-text:
+string hero-highlighted-text: 
+string sub-hero-text: 
+string hero-image-url:
+
+
+-- cmsHeroSection $cmsHeroSectionObj:
+string hero-text: *$dummy12
+string hero-highlighted-text: *$dummy13
+string sub-hero-text: *$dummy14
+string hero-image-url: *$dummy15
+
+
+
+///////////////////////////////////////////////// CMS Page NFT Details Section ////////////////////////////////////////////////////
+
+-- record cmsNFTDetails:
+string title-text:
+string title-description-text: 
+string button-text: 
+;;;;string preview-image-url:
+
+
+-- cmsNFTDetails $cmsNFTDetailsObj:
+string title-text: *$dummy16
+string title-description-text: *$dummy17
+string button-text: *$dummy18
+;;;;string preview-image-url: *$dummy9
+
+
+
+///////////////////////////////////////////////// CMS Page Event Details Section ////////////////////////////////////////////////////
+
+-- record cmsEventDetails:
+string title-text:
+string title-description-text: 
+string button-text: 
+string event-details-image:
+string event-date:
+
+-- cmsEventDetails $cmsEventDetailsObj:
+string title-text: *$dummy19
+string title-description-text: *$dummy20
+string button-text: *$dummy21
+string event-details-image: *$dummy22
+string event-date: *$dummy73
+
+
+///////////////////////////////////////////////// CMS Page How to Claim Section  ////////////////////////////////////////////////////
+
+-- record cmsHowToClaim:
+string title-text: 
+;;;;string preview-image-url:
+
+
+-- cmsHowToClaim $cmsHowToClaimObj:
+string title-text: *$dummy23
+;;;;string preview-image-url: *$dummy9
+
+
+///////////////////////////////////////////////// CMS Page How to Claim Step 1  ////////////////////////////////////////////////////
+
+-- record cmsClaimStep1:
+string count-text:
+string title-text: 
+string description-text: 
+string how-to-claim-step-1-image-url:
+
+-- cmsClaimStep1 $cmsClaimStep1Obj:
+string count-text: *$dummy24
+string title-text: *$dummy25
+string description-text: *$dummy26
+string how-to-claim-step-1-image-url: *$dummy27
+
+///////////////////////////////////////////////// CMS Page How to Claim Step 2  ////////////////////////////////////////////////////
+
+-- record cmsClaimStep2:
+string count-text:
+string title-text:
+string description-text: 
+string how-to-claim-step-2-image-url:
+
+-- cmsClaimStep2 $cmsClaimStep2Obj:
+string count-text: *$dummy28
+string title-text: *$dummy29
+string description-text: *$dummy30
+string how-to-claim-step-2-image-url: *$dummy31
+
+///////////////////////////////////////////////// CMS Page How to Claim Step 3  ////////////////////////////////////////////////////
+
+-- record cmsClaimStep3:
+string count-text:
+string title-text:
+string description-text: 
+string how-to-claim-step-3-image-url:
+
+-- cmsClaimStep3 $cmsClaimStep3Obj:
+string count-text: *$dummy32
+string title-text: *$dummy33
+string description-text: *$dummy34
+string how-to-claim-step-3-image-url: *$dummy35
+
+///////////////////////////////////////////////// CMS Page How to Claim Step 3  ////////////////////////////////////////////////////
+
+;;-- record cmsClaimStep3:
+;;string count-text:
+;;string title-text:
+;;string description-text: 
+
+;;-- cmsClaimStep3 $cmsClaimStep3Obj:
+;;string count-text: *$dummy6
+;;string title-text: *$dummy6
+;;string description-text: *$dummy6
+
+
+///////////////////////////////////////////////// CMS Page About Us Section  ////////////////////////////////////////////////////
+
+-- record cmsAboutSection:
+string title-text:
+string description-text: 
+string about-us-image-url:
+
+
+-- cmsAboutSection $cmsAboutSectionObj:
+string title-text: *$dummy36
+string description-text: *$dummy37
+string about-us-image-url: *$dummy38
+
+
+
+///////////////////////////////////////////////// CMS Page Image Section  ////////////////////////////////////////////////////
+
+-- record cmsImageGallerySection:
+string image-gallery-image-1:
+string image-gallery-image-2:
+string image-gallery-image-3:
+string image-gallery-image-4:
+
+
+-- cmsImageGallerySection $cmsImageGallerySectionObj:
+string image-gallery-image-1: *$dummy39
+string image-gallery-image-2: *$dummy40
+string image-gallery-image-3: *$dummy41
+string image-gallery-image-4: *$dummy42
+
+
+
+///////////////////////////////////////////////// CMS Page FAQ Section  ////////////////////////////////////////////////////
+
+-- record cmsFAQSection:
+string section-title-text:
+string question-1-text:
+string description-1-text: 
+string question-2-text:
+string description-2-text:
+string question-3-text:
+string description-3-text: 
+string question-4-text:
+string description-4-text:
+string question-5-text:
+string description-5-text: 
+string question-6-text:
+string description-6-text:
+string question-7-text:
+string description-7-text: 
+string question-8-text:
+string description-8-text:
+string question-9-text:
+string description-9-text: 
+string question-10-text:
+string description-10-text:
+;;string preview-image-url:
+
+
+-- cmsFAQSection $cmsFAQSectionObj:
+string section-title-text: *$dummy43
+string question-1-text: *$dummy44
+string description-1-text: *$dummy45
+string question-2-text: *$dummy46
+string description-2-text: *$dummy47
+string question-3-text: *$dummy48
+string description-3-text: *$dummy49
+string question-4-text: *$dummy50
+string description-4-text: *$dummy51
+string question-5-text: *$dummy52
+string description-5-text: *$dummy53
+string question-6-text: *$dummy54
+string description-6-text: *$dummy55
+string question-7-text: *$dummy56
+string description-7-text: *$dummy57
+string question-8-text: *$dummy58
+string description-8-text: *$dummy59
+string question-9-text: *$dummy60
+string description-9-text: *$dummy61
+string question-10-text: *$dummy62
+string description-10-text: *$dummy63
+;;string preview-image-url: *$dummy9
+
+
+///////////////////////////////////////////////// CMS Page Footer Section  ////////////////////////////////////////////////////
+
+-- record cmsFooterSection:
+string social-url-1:
+string social-url-2:
+string social-url-3:
+string footer-image-1:
+string footer-image-2:
+string footer-image-3:
+
+
+-- cmsFooterSection $cmsFooterSectionObj:
+string social-url-1: *$dummy64
+string social-url-2: *$dummy65
+string social-url-3: *$dummy66
+string footer-image-1: *$dummy67
+string footer-image-2: *$dummy68
+string footer-image-3: *$dummy69
+
+///////////////////////////////////////////////// CMS Page T&C Section  ////////////////////////////////////////////////////
+
+-- record cmsTermsConditions:
+string title-text:
+string event-details:
+string description-text: 
+;;string preview-image-url:
+
+
+-- cmsTermsConditions $cmsTermsConditionsObj:
+string title-text: *$dummy70
+string event-details: *$dummy71
+string description-text: *$dummy72
+;;string preview-image-url: *$dummy9
+
+
+///////////// Personal profile Info /////////////////////////////
+
+-- record personalInfo:
+string fullName:
+string userEmail: 
+
+
+-- personalInfo $personalInfoObj:
+string fullName: *$dummy6
+string userEmail: *$dummy6
+
+///////////// Personal Organization Info /////////////////////////////
+
+-- record organizationInfo:
+string orgName:
+string orgType: 
+string orgLocation: 
+
+-- organizationInfo $organizationInfoObj:
+string orgName: *$dummy6
+string orgType: *$dummy6
+string orgLocation: *$dummy6
+
+
+////////////////// Test Record ////////////////////////////
+-- record templateEditorRecord:
+cmsNotificationRibbon cmsNotificationRibbon-1:
+cmsNavigationBar cmsNavigationBar-1:
+cmsHeroSection cmsHeroSection-1:
+cmsNFTDetails cmsNFTDetails-1:
+cmsEventDetails cmsEventDetails-1:
+cmsHowToClaim cmsHowToClaim-1:
+cmsClaimStep1 cmsClaimStep1-1:
+cmsClaimStep2 cmsClaimStep2-1:
+cmsClaimStep3 cmsClaimStep3-1:
+cmsAboutSection cmsAboutSection-1:
+cmsImageGallerySection cmsImageGallerySection-1:
+cmsFAQSection cmsFAQSection-1:
+cmsFooterSection cmsFooterSection-1:
+cmsTermsConditions cmsTermsConditions-1:
+
+
+-- templateEditorRecord $templateEditorRecordObj:
+cmsNotificationRibbon-1: *$cmsNotificationRibbonObj
+cmsNavigationBar-1: *$cmsNavigationBarObj
+cmsHeroSection-1: *$cmsHeroSectionObj
+cmsNFTDetails-1: *$cmsNFTDetailsObj
+cmsEventDetails-1: *$cmsEventDetailsObj
+cmsHowToClaim-1: *$cmsHowToClaimObj
+cmsClaimStep1-1: *$cmsClaimStep1Obj
+cmsClaimStep2-1: *$cmsClaimStep2Obj
+cmsClaimStep3-1: *$cmsClaimStep3Obj
+cmsAboutSection-1: *$cmsAboutSectionObj
+cmsImageGallerySection-1: *$cmsImageGallerySectionObj
+cmsFAQSection-1: *$cmsFAQSectionObj
+cmsFooterSection-1: *$cmsFooterSectionObj
+cmsTermsConditions-1: *$cmsTermsConditionsObj
+
+
+
+///////////////////////////////////////////////
