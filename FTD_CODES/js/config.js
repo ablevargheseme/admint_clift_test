@@ -1,0 +1,10 @@
+export const DISTRIBUTION_BASE_BACKEND_URL="https://campaign.maxz.io";
+//export const DISTRIBUTION_BASE_BACKEND_URL="https://campaign.admint.io";
+export const COLOR_SCHEME_BASE_URL="https://admint-io.github.io/ftdeditor";
+export const FONT_SCHEME_BASE_URL="https://admint-io.github.io/ftdeditor";
+export const G_TAG_ID="G-GB9WDK9NC";//Test - "G-GB9WDK9NC7" // Admint - G-NDZYGEPEV9
+// export const OPENSEA_VIEW_NFT_BASE_URL="https://opensea.io/assets/matic";                            // Mainnet
+export const OPENSEA_VIEW_NFT_BASE_URL="https://testnets.opensea.io/assets/mumbai";                     // Testnet
+export const WALLET_CONNECT_INFURA_ID="8043bb2cf99347b1bfadfb233c5325c0";           // Mikey Test key
+export const FTD_TEMPLATE_BASE_URL="able.fifthtry.site";           // Mikey Test key
+export const FTD_ID_APPEND_STRING="";           // Mikey Test key

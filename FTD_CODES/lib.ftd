@@ -18,7 +18,7 @@
 -- string: //unpkg.com/evm-chains@0.2.0/dist/umd/index.min.js:type=text/javascript
 ;;-- string: //unpkg.com/@walletconnect/web3-provider@1.2.1/dist/umd/index.min.js:type=text/javascript
 -- string: //unpkg.com/fortmatic@2.0.6/dist/fortmatic.js:type=text/javascript
--- string: distribution/templates/template-1/js/web3-provider.js:type=text/javascript
+-- string: js/web3-provider.js:type=text/javascript
 
 -- end: js
 
@@ -2116,7 +2116,7 @@ $tc-item-item.content
 
 
 -- web-component app-state:
-js: $assets.files.distribution.templates.template-1.js.app-state.js
+js: $assets.files.js.app-state.js
 module texts: texts
 ftd.color-scheme colors: $colors.main
 module fonts: fonts

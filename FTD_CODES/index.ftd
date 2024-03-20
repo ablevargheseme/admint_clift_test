@@ -6,7 +6,7 @@
 -- import: able.fifthtry.site/functions as funct
 -- import: able.fifthtry.site/fonts as fonts
 
--- string $loadedState: loading
+-- string $loadedState: loaded
 
 ;; -- ftd.text: $colors.main.accent.primary.dark
 

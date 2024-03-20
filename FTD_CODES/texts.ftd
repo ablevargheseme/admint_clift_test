@@ -1,5 +1,5 @@
 -- string $nft-type: .
--- string $wallet-state: Connect Wallet
+-- string $wallet-state: Connect  My Wallet
 -- string $popup-title: undefined
 -- string $popup-body: undefined
 
@@ -9,7 +9,7 @@
 
 
 
--- string $dummy1: Collect yours Now 
+-- string $dummy1: Collect yours Now Now
 
 -- string $dummy2: Claim Later!  
 

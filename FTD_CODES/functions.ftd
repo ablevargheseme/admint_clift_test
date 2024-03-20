@@ -5,8 +5,9 @@
 -- string: //unpkg.com/evm-chains@0.2.0/dist/umd/index.min.js:type=text/javascript
 ;;-- string: //unpkg.com/@walletconnect/web3-provider@1.2.1/dist/umd/index.min.js:type=text/javascript
 -- string: //unpkg.com/fortmatic@2.0.6/dist/fortmatic.js:type=text/javascript
--- string: distribution/templates/template-1/js/web3-provider.js:type=text/javascript
--- string: distribution/templates/template-1/js/index.js:type=module
+-- string: js/web3-provider.js:type=text/javascript
+-- string: js/index.js:type=module
+
 
 -- end: js
 
