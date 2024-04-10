@@ -1,8 +1,7 @@
 -- import: fastn
 
 -- fastn.package: able.fifthtry.site
-
-
+zip: some-url
 
 -- fastn.dependency: fifthtry.github.io/admint-cs
 -- fastn.dependency: fifthtry.github.io/montserrat
