@@ -1,81 +1,160 @@
--- string $cmsNotificationRibbon-1-text: hey check this out
--- string $cmsNotificationRibbon-1-bold-text: my world
--- string $cmsNotificationRibbon-1-bold-text-url: my superworld
+/* START OF CMS DATA POINTS */
+
+-- string $cmsNotificationRibbon-1-text: Collect yours Now or never
+
+-- string $cmsNotificationRibbon-1-bold-text: Claim Later!  
+
+-- string $cmsNotificationRibbon-1-bold-text-url: Text
+
 -- string $cmsNavigationBar-1-link-1-text: Home
+
 -- string $cmsNavigationBar-1-link-1-text-url: Text
+
 -- string $cmsNavigationBar-1-link-2-text: POA
+
 -- string $cmsNavigationBar-1-link-2-text-url: Text
+
 -- string $cmsNavigationBar-1-link-3-text: How to Claim
+
 -- string $cmsNavigationBar-1-link-3-text-url: Text
+
 -- string $cmsNavigationBar-1-link-4-text: About Us
+
 -- string $cmsNavigationBar-1-link-4-text-url: Text
+
 -- string $cmsNavigationBar-1-link-5-text: FAQs
+
 -- string $cmsNavigationBar-1-link-5-text-url: Text
+
 -- string $cmsNavigationBar-1-logo-url: images/logo.png
+
 -- string $cmsNavigationBar-1-button-text: Connect Wallet
+
 -- string $cmsHeroSection-1-hero-text: Building a resilient future through
+
 -- string $cmsHeroSection-1-hero-highlighted-text: Cyber Education
+
 -- string $cmsHeroSection-1-sub-hero-text: From safeguarding your personal data to protecting your community, our aim is to equip you with the latest cyber education tools & strategies. Let’s work together to build a resilient future - Be Secured, Stay Secured!”
+
 -- string $cmsHeroSection-1-hero-image-url: images/hero.png
+
 -- string $cmsNFTDetails-1-title-text: CYBERSECURITY CONFERENCE TOKEN
+
 -- string $cmsNFTDetails-1-title-description-text: This POA or Proof of Attendance is a non-fungible token that proves you participated in the 2nd Regional Cybersecurity Conference conducted by The School of Computing, Holy Angel University on 10th May 2023.
+
 -- string $cmsNFTDetails-1-button-text: Claim Now
+
 -- string $cmsEventDetails-1-title-text: 2nd Regional Cybersecurity Conference
+
 -- string $cmsEventDetails-1-title-description-text: University Theatre, SFJ Blog, Holy Angel University
+
 -- string $cmsEventDetails-1-button-text: 12 Days to go
+
 -- string $cmsEventDetails-1-event-details-image: images/conf.png
+
 -- string $cmsEventDetails-1-event-date: May 10 2023
+
 -- string $cmsHowToClaim-1-title-text: How to Claim
+
 -- string $cmsClaimStep1-1-count-text: 01
+
 -- string $cmsClaimStep1-1-title-text: Connect your wallet
+
 -- string $cmsClaimStep1-1-description-text: You need a crypto browser wallet to access your token. In case you do not have a wallet, you can quickly set one up using the Torus wallet option. You can sign up to Torus with your existing email / social media accounts.
+
 -- string $cmsClaimStep1-1-how-to-claim-step-1-image-url: images/connect.png
+
 -- string $cmsClaimStep2-1-count-text: 02
+
 -- string $cmsClaimStep2-1-title-text: Claim NFT
+
 -- string $cmsClaimStep2-1-description-text: To claim your token, connect your wallet and simply click on the “Claim Now” button. You will be notified in case of a successful claim or otherwise. Do note that you can only claim your token once.
+
 -- string $cmsClaimStep2-1-how-to-claim-step-2-image-url: images/claim.png
+
 -- string $cmsClaimStep3-1-count-text: 03
+
 -- string $cmsClaimStep3-1-title-text: View NFT
+
 -- string $cmsClaimStep3-1-description-text: Once you have claimed your token, it will be transferred to your wallet over the next 24 hours. Connect again with the same wallet id you used to claim. Scroll down and click on the “View NFT” button to see your token.
+
 -- string $cmsClaimStep3-1-how-to-claim-step-3-image-url: images/view.png
+
 -- string $cmsAboutSection-1-title-text: About Us
+
 -- string $cmsAboutSection-1-description-text: On the 10th of May, the School of Computing conducted the 2nd Regional Cybersecurity Conference at the Holy Angel University (HAU) Theater. The conference invited various speakers from different industries who shared their experience and knowledge about Cybersecurity. It highlights the importance of digital safeguards empowerment and cybersecurity awareness in the digital age as cyber-attacks are becoming common in society. IT Education Heads, Faculty, Students, IT Professionals, and Cybersecurity enthusiasts from different schools and companies attended the event.
+
 -- string $cmsAboutSection-1-about-us-image-url: images/people.png
+
 -- string $cmsImageGallerySection-1-image-gallery-image-1: images/claim.png
+
 -- string $cmsImageGallerySection-1-image-gallery-image-2: images/claim.png
+
 -- string $cmsImageGallerySection-1-image-gallery-image-3: images/claim.png
+
 -- string $cmsImageGallerySection-1-image-gallery-image-4: images/claim.png
+
 -- string $cmsFAQSection-1-section-title-text: FAQs
+
 -- string $cmsFAQSection-1-question-1-text: What is a POA token?
+
 -- string $cmsFAQSection-1-description-1-text: A POA token, or Proof of Attendance token, is a non-fungible token (NFT) that is given to users as a way to prove that they attended a certain event. POA tokens are minted on a blockchain and are stored in users’ wallets. They can be displayed on social media or used to prove attendance for future events.
+
 -- string $cmsFAQSection-1-question-2-text: How do I claim the POA token?
+
 -- string $cmsFAQSection-1-description-2-text: To the token, you need to connect to the website using a crypto browser wallet - Metamask or Torus. After logging in simply claim and approve the transaction. Once done, the organizers will be able to send the POA NFT to you. The NFT should reflect in your wallet within 24 hours.
+
 -- string $cmsFAQSection-1-question-3-text: I don’t have a crypto wallet. How do I claim my token?
+
 -- string $cmsFAQSection-1-description-3-text: You can select the login with the Torus wallet option. Once selected you can simply login with any of your existing social accounts, and a wallet will be created for you. You can then proceed to claim the POA NFT.
+
 -- string $cmsFAQSection-1-question-4-text: How do I get a Metamask wallet?
--- string $cmsFAQSection-1-description-4-text: You can download and install Metamask in your favorite browser here
+
+-- string $cmsFAQSection-1-description-4-text: You can download and install Metamask in your favorite browser here: https://metamask.io/download/ Follow the steps mentioned diligently. Do note down your private key details. Your private keys are the keys to your wallet. They allow you to access your cryptocurrency & NFTs. So it’s important to keep them safe. Never share your private keys with anyone.
+
 -- string $cmsFAQSection-1-question-5-text: How many times can I claim a token?
+
 -- string $cmsFAQSection-1-description-5-text: Your assigned NFT can be claimed only once. Hence it is very important that you do not share your unique URL with others as they could claim it on your behalf.
+
 -- string $cmsFAQSection-1-question-6-text: Which blockchain are these tokens minted on?
+
 -- string $cmsFAQSection-1-description-6-text: The POA token issued to you has been minted over the Polygon network.
+
 -- string $cmsFAQSection-1-question-7-text: Do I have to pay to claim this NFT?
+
 -- string $cmsFAQSection-1-description-7-text: There are no fees to claim these tokens. In the future, you may want to purchase a few Matic tokens as cryptocurrency (to pay as gas fees) if you wish to transfer the tokens to another wallet.
+
 -- string $cmsFAQSection-1-question-8-text: How long will it take for the NFT to reflect in my wallet?
+
 -- string $cmsFAQSection-1-description-8-text: After claiming the token successfully, the NFT will be sent into your wallet within the next 24 hours.
+
 -- string $cmsFAQSection-1-question-9-text: How can I use this POA token in the future?
+
 -- string $cmsFAQSection-1-description-9-text: Currently there are no utilities associated with the token. However we may choose to give NFT holders special privileges for future events & meetups.
+
 -- string $cmsFAQSection-1-question-10-text: Who do I get in touch with in case of any issues?
--- string $cmsFAQSection-1-description-10-text: You can write in to the following email id
+
+-- string $cmsFAQSection-1-description-10-text: You can write in to the following email id: team@theblokc.com for any assistance related to getting the POA tokens.
+
 -- string $cmsFooterSection-1-social-url-1: https://www.linkedin.com/
+
 -- string $cmsFooterSection-1-social-url-2: https://www.youtube.com/
+
 -- string $cmsFooterSection-1-social-url-3: https://www.facebook.com/
+
 -- string $cmsFooterSection-1-footer-image-1: images/linkedin-logo.svg
+
 -- string $cmsFooterSection-1-footer-image-2: images/youtube-logo.svg
+
 -- string $cmsFooterSection-1-footer-image-3: images/facebook-logo.svg
+
 -- string $cmsTermsConditions-1-title-text: 2nd Regional Cybersecurity Conference at the Holy Angel University Proof of Attendance NFT (Non-Fungible Tokens)
--- string $cmsTermsConditions-1-event-details: Event Date
+
+-- string $cmsTermsConditions-1-event-details: Event Date: May 10, 2023
+
 -- string $cmsTermsConditions-1-description-text: By claiming your Proof of Attendance (POA) NFT, you acknowledge that you have read, understood, and agreed to these terms and conditions.
 
+/* END OF CMS DATA POINTS */
 
 -- string $nft-type: .
 -- string $wallet-state: Connect Wallet

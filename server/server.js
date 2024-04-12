@@ -3,14 +3,14 @@ import express from 'express';
 const app = express();
 const port = 3000; // You can choose any available port number
 
-app.get('/', (req, res) => {
+app.get('/', async (req, res) => {
     // Extracting query parameters from the request
     const { name} = req.query;
     const {campaign_id}=req.query;
 
     // Checking if both parameters exist
     if (campaign_id) {
-         update_site(campaign_id,name)
+        await  update_site(campaign_id,name)
         // Sending the parameters as a response
         res.send(`campaign site update ${campaign_id}`);
     } else {
