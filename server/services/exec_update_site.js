@@ -119,7 +119,7 @@ const update_site = async (campaignId, name) => {
     const responseJson = await fetchJsonFromApi(apiUrl);
 
     await createColourFile(`https://admint-io.github.io/ftdeditor/${responseJson.values[0].colorSchemeUrl}`)
-    // await createFontsFile(`https://admint-io.github.io/ftdeditor/${responseJson.values[0].fontScheme.schemeUrl}`)
+    await createFontsFile(`https://admint-io.github.io/ftdeditor/${responseJson.values[0].fontScheme.schemeUrl}`)
     const siteDataObject = responseJson.values[0].siteData
     // console.log("siteData", siteDataObject);
     const { defaultSiteDataObject, tail_content } = await readFileAndReturnDefaultSiteData('../FTD_CODES/default_texts.ftd');
