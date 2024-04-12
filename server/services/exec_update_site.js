@@ -1,11 +1,9 @@
 import fs from 'fs';
 import path from 'path';
 import { exec } from 'child_process';
+import axios from 'axios';
 
 import fetch from 'node-fetch';
-
-
-
 
 const convertFtdFormatToJson = async (fileContent) => {
 
@@ -32,7 +30,7 @@ const convertFtdFormatToJson = async (fileContent) => {
         }
 
     });
-    
+
 
     return object;
 }
@@ -66,20 +64,48 @@ const fetchJsonFromApi = async (apiUrl) => {
 
 
 
-const  readFileAndReturnDefaultSiteData= async (filePath)=> {
+const readFileAndReturnDefaultSiteData = async (filePath) => {
 
-        const data = await fs.promises.readFile(filePath, 'utf8');
-        const defaultContent = data;
+    const data = await fs.promises.readFile(filePath, 'utf8');
+    const defaultContent = data;
 
-        // Split the file contents into two parts
-        const [_, fileContents1, tail_content] = defaultContent.split(/\/\*\s*START\s*OF\s*CMS\s*DATA\s*POINTS\s*\*\/|\/\*\s*END\s*OF\s*CMS\s*DATA\s*POINTS\s*\*\//);
+    // Split the file contents into two parts
+    const [_, fileContents1, tail_content] = defaultContent.split(/\/\*\s*START\s*OF\s*CMS\s*DATA\s*POINTS\s*\*\/|\/\*\s*END\s*OF\s*CMS\s*DATA\s*POINTS\s*\*\//);
 
-        const defaultSiteDataObject = await convertFtdFormatToJson(fileContents1);
-        //  console.log("defaultsiteData_object", defaultSiteDataObject);
-        return {defaultSiteDataObject,tail_content};
+    const defaultSiteDataObject = await convertFtdFormatToJson(fileContents1);
+    //  console.log("defaultsiteData_object", defaultSiteDataObject);
+    return { defaultSiteDataObject, tail_content };
+
+}
+const createColourFile= async (color_scheme_apiUrl) => {
+    const folderPath = `../FTD_CODES`;
+    const response = await axios.get(color_scheme_apiUrl, { responseType: 'arraybuffer' });
+
+    // Create the folder if it doesn't exist
+    if (!fs.existsSync(folderPath)) {
+        fs.mkdirSync(folderPath, { recursive: true });
+    }
+
+    // Write the received data to a file
+    fs.writeFileSync(path.join(folderPath,'colors.ftd'), response.data);
+  
 
 }
 
+const createFontsFile= async (font_scheme_apiUrl) => {
+
+    const folderPath = `../FTD_CODES`;
+    const response = await axios.get(font_scheme_apiUrl, { responseType: 'arraybuffer' });
+
+    // Create the folder if it doesn't exist
+    if (!fs.existsSync(folderPath)) {
+        fs.mkdirSync(folderPath, { recursive: true });
+    }
+
+    // Write the received data to a file
+    fs.writeFileSync(path.join(folderPath,'fonts.ftd'), response.data);
+
+}
 
 
 
@@ -88,36 +114,35 @@ const apiUrl = 'https://campaign.maxz.io/sitedata/trial';
 
 
 
-
-
-
-
 const update_site = async (campaignId, name) => {
     console.log("request to update site", campaignId);
     const responseJson = await fetchJsonFromApi(apiUrl);
+
+    await createColourFile(`https://admint-io.github.io/ftdeditor/${responseJson.values[0].colorSchemeUrl}`)
+    // await createFontsFile(`https://admint-io.github.io/ftdeditor/${responseJson.values[0].fontScheme.schemeUrl}`)
     const siteDataObject = responseJson.values[0].siteData
     // console.log("siteData", siteDataObject);
-    const {defaultSiteDataObject,tail_content}= await readFileAndReturnDefaultSiteData('../FTD_CODES/default_texts.ftd');
-    const updatedSiteDataObject=defaultSiteDataObject;
- 
+    const { defaultSiteDataObject, tail_content } = await readFileAndReturnDefaultSiteData('../FTD_CODES/default_texts.ftd');
+    const updatedSiteDataObject = defaultSiteDataObject;
+
     for (const parentKey in siteDataObject) {
         const childObject = siteDataObject[parentKey];
-        
+
         // Iterate over each key-value pair in the child object
         for (const key in childObject) {
-          const value = childObject[key];
-          
-          // Check if the value is not undefined
-          if (value !== 'undefined') {
-            // console.log(`incomming value: ${value}`);
-            // console.log("default value",defaultSiteDataObject[parentKey][key]);
-            updatedSiteDataObject[parentKey][key]=value;
-          }
-        }
-      }
+            const value = childObject[key];
 
-    const fileContent=await convertJsonToFtdFormat(updatedSiteDataObject);
-    const finalContent= fileContent+tail_content;
+            // Check if the value is not undefined
+            if (value !== 'undefined') {
+                // console.log(`incomming value: ${value}`);
+                // console.log("default value",defaultSiteDataObject[parentKey][key]);
+                updatedSiteDataObject[parentKey][key] = value;
+            }
+        }
+    }
+
+    const fileContent = await convertJsonToFtdFormat(updatedSiteDataObject);
+    const finalContent = fileContent + tail_content;
 
     // Define the folder path where the file will be created
     const folderPath = `../FTD_CODES`; // Replace this with your desired absolute path
@@ -145,18 +170,11 @@ const update_site = async (campaignId, name) => {
             console.error('An error occurred while writing the file:', err);
         } else {
             console.log(`File '${fileName}' created successfully.`);
-
-
-
             // Change the current working directory
             process.chdir('../FTD_CODES'); // Replace this with your desired absolute path
-            // Execute the terminal command at the end of the script
-            // Define the environmental variable
             const env = Object.assign({}, process.env, {
                 FIFTHTRY_SITE_WRITE_TOKEN: 'ab430fa2-1935-48a4-9894-e32f8e8749b5' // Replace this with your token value
             });
-            // Access the value of the environmental variable directly
-            //console.log(`FIFTHTRY_SITE_WRITE_TOKEN: ${env.FIFTHTRY_SITE_WRITE_TOKEN}`);
             exec('export FIFTHTRY_SITE_WRITE_TOKEN=ab430fa2-1935-48a4-9894-e32f8e8749b5 && clift upload able', (error, stdout, stderr) => {
                 if (error) {
                     console.error(`Error executing command: ${error.message}`);
