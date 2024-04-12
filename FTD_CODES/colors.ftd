@@ -1,7 +1,7 @@
 
     -- ftd.color base-:
-    light: #f3f3f3
-    dark: #080d2b
+    light: #E5E6E2
+    dark: #03071e
 
     -- ftd.color step-1-:
     light: #fdfaf1
@@ -12,8 +12,8 @@
     dark: #2b2b2b
 
     -- ftd.color overlay-:
-    light: rgba(0, 0, 0, 0.8)
-    dark: rgba(0, 0, 0, 0.8)
+    light: #000000
+    dark: #000000
 
     -- ftd.color code-:
     light: #f5f5f5
@@ -27,20 +27,20 @@
     code: $code-
 
     -- ftd.color border-:
-    light: #f0ece2
-    dark: #ffb500
+    light: #d00000
+    dark: #d00000
 
     -- ftd.color border-strong-:
     light: #d9d9d9
     dark: #333333
 
     -- ftd.color text-:
-    light: #5F5F5F
-    dark: #ffffff
+    light: #707070
+    dark: #d9d9d9
 
     -- ftd.color text-strong-:
-    light: #000000
-    dark: #ffffff
+    light: #dc2f02
+    dark: #dc2f02
 
     -- ftd.color shadow-:
     light: #ef8435
@@ -55,8 +55,8 @@
     dark: #ef8435
 
     -- ftd.color cta-primary-hover-:
-    light: #D69228
-    dark: #D69228
+    light: #f48c06
+    dark: #f48c06
 
     -- ftd.color cta-primary-pressed-:
     light: #bf6a2a
@@ -67,16 +67,16 @@
     dark: #fad9c0
 
     -- ftd.color cta-primary-focused-:
-    light: #D69228
-    dark: #D69228
+    light: #b36328
+    dark: #b36328
 
     -- ftd.color cta-primary-border-:
-    light: #DF3738
-    dark: #DF3738
+    light: #e85d04
+    dark: #e85d04
 
     -- ftd.color cta-primary-text-:
-    light: #DF3738
-    dark: #DF3738
+    light: #e85d04
+    dark: #e85d04
 
     -- ftd.color cta-primary-text-disabled-:
     light: #f2a164
@@ -122,8 +122,8 @@
     dark: #b0aeac
 
     -- ftd.color cta-secondary-text-:
-    light: #ffffff
-    dark: #ffffff
+    light: #ffba08
+    dark: #ffba08
 
     -- ftd.color cta-secondary-text-disabled-:
     light: #304655
@@ -239,12 +239,12 @@
     border-disabled: $cta-danger-border-disabled-
 
     -- ftd.color accent-primary-:
-    light: #ffa900
-    dark: #ffa900
+    light: #9D0208
+    dark: #9D0208
 
     -- ftd.color accent-secondary-:
-    light: #ff7d00
-    dark: #ff7d00
+    light: #dc2f02
+    dark: #dc2f02
 
     -- ftd.color accent-tertiary-:
     light: #c5cbd7

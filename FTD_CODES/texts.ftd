@@ -1,5 +1,5 @@
--- string $cmsNotificationRibbon-1-text: hey check this out
--- string $cmsNotificationRibbon-1-bold-text: cool
+-- string $cmsNotificationRibbon-1-text: hey check my webpage 
+-- string $cmsNotificationRibbon-1-bold-text: coolest
 -- string $cmsNotificationRibbon-1-bold-text-url: my superworld
 -- string $cmsNavigationBar-1-link-1-text: Home
 -- string $cmsNavigationBar-1-link-1-text-url: Text
