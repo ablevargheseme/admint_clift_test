@@ -1,5 +1,5 @@
--- string $cmsNotificationRibbon-1-text: hey check this out
--- string $cmsNotificationRibbon-1-bold-text: my world
+-- string $cmsNotificationRibbon-1-text: check my webpage oopkojk
+-- string $cmsNotificationRibbon-1-bold-text: coolest
 -- string $cmsNotificationRibbon-1-bold-text-url: my superworld
 -- string $cmsNavigationBar-1-link-1-text: Home
 -- string $cmsNavigationBar-1-link-1-text-url: Text
@@ -16,7 +16,7 @@
 -- string $cmsHeroSection-1-hero-text: Building a resilient future through
 -- string $cmsHeroSection-1-hero-highlighted-text: Cyber Education
 -- string $cmsHeroSection-1-sub-hero-text: From safeguarding your personal data to protecting your community, our aim is to equip you with the latest cyber education tools & strategies. Let’s work together to build a resilient future - Be Secured, Stay Secured!”
--- string $cmsHeroSection-1-hero-image-url: images/hero.png
+-- string $cmsHeroSection-1-hero-image-url: https://files.maxz.io/public/c92278fd-fbca-4143-bb70-b8d292be536a/images/undefined/b233298c-10df-4719-86bb-260343a972f6.jpeg
 -- string $cmsNFTDetails-1-title-text: CYBERSECURITY CONFERENCE TOKEN
 -- string $cmsNFTDetails-1-title-description-text: This POA or Proof of Attendance is a non-fungible token that proves you participated in the 2nd Regional Cybersecurity Conference conducted by The School of Computing, Holy Angel University on 10th May 2023.
 -- string $cmsNFTDetails-1-button-text: Claim Now
