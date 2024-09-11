@@ -97,7 +97,7 @@ const update_site = async (campaignId, name) => {
     const responseJson = await fetchJsonFromApi(`https://campaign.admintsandbox.xyz/sitedata/${campaignId}`);
     const siteDataObject = responseJson.values[0].siteData
     // console.log("siteData", siteDataObject);
-    const {defaultSiteDataObject,tail_content}= await readFileAndReturnDefaultSiteData('../FTD_CODES/default_texts.ftd');
+    const {defaultSiteDataObject,tail_content}= await readFileAndReturnDefaultSiteData('../TEMPLATE-1/default_texts.ftd');
     const updatedSiteDataObject=defaultSiteDataObject;
  
     for (const parentKey in siteDataObject) {
@@ -120,7 +120,7 @@ const update_site = async (campaignId, name) => {
     const finalContent= fileContent+tail_content;
 
     // Define the folder path where the file will be created
-    const folderPath = `../FTD_CODES`; // Replace this with your desired absolute path
+    const folderPath = `../TEMPLATE-1`; // Replace this with your desired absolute path
 
     // Check if the folder exists
     if (!fs.existsSync(folderPath)) {
@@ -149,7 +149,7 @@ const update_site = async (campaignId, name) => {
 
 
             // Change the current working directory
-            process.chdir('../FTD_CODES'); // Replace this with your desired absolute path
+            process.chdir('../TEMPLATE-1'); // Replace this with your desired absolute path
             // Execute the terminal command at the end of the script
             // Define the environmental variable
             const env = Object.assign({}, process.env, {
