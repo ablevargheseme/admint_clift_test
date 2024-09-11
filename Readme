@@ -1,0 +1,20 @@
+nstall nodejs 
+
+tested nodejs versin v19.1.0
+tested npm version 8.19.3
+
+go to admint_clift_test/server
+
+
+run "npm install"
+run "npm run start"
+
+call http://localhost:3000/?campaign_id=jiop
+"jiop" is the campaign name
+
+example response : "campaign site update jiop"
+check logs of server to see errors
+
+edit the campaign from admin dashboard cms - (for the campaign "jiop")
+
+call http://localhost:3000/?campaign_id=jiop to see errors
