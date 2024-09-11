@@ -84,7 +84,7 @@ const  readFileAndReturnDefaultSiteData= async (filePath)=> {
 
 
 
-const apiUrl = 'https://campaign.maxz.io/sitedata/trial';
+const apiUrl = 'https://campaign.admintsandbox.xyz/sitedata/jiop';
 
 
 
@@ -94,7 +94,7 @@ const apiUrl = 'https://campaign.maxz.io/sitedata/trial';
 
 const update_site = async (campaignId, name) => {
     console.log("request to update site", campaignId);
-    const responseJson = await fetchJsonFromApi(apiUrl);
+    const responseJson = await fetchJsonFromApi(`https://campaign.admintsandbox.xyz/sitedata/${campaignId}`);
     const siteDataObject = responseJson.values[0].siteData
     // console.log("siteData", siteDataObject);
     const {defaultSiteDataObject,tail_content}= await readFileAndReturnDefaultSiteData('../FTD_CODES/default_texts.ftd');
