@@ -67,12 +67,12 @@ const readFileAndReturnDefaultSiteData = async (filePath) => {
 };
 
 // Update site data and write to file
-const update_site = async (campaignName) => {
+const update_site = async (campaignName,templateFolder) => {
     console.log("Request to update site", campaignName);
     const responseJson = await fetchJsonFromApi(`https://campaign.admintsandbox.xyz/sitedata/${campaignName}`);
     const siteDataObject = responseJson.values[0].siteData;
 
-    const { defaultSiteDataObject, tail_content } = await readFileAndReturnDefaultSiteData('../TEMPLATE-1/default_texts.ftd');
+    const { defaultSiteDataObject, tail_content } = await readFileAndReturnDefaultSiteData(`../${templateFolder}/default_texts.ftd`);
     const updatedSiteDataObject = defaultSiteDataObject;
 
     for (const parentKey in siteDataObject) {
@@ -90,7 +90,7 @@ const update_site = async (campaignName) => {
     const fileContent = await convertJsonToFtdFormat(updatedSiteDataObject);
     const finalContent = fileContent + tail_content;
 
-    const folderPath = `../TEMPLATE-1`;
+    const folderPath = `../${templateFolder}`;
 
     if (!fs.existsSync(folderPath)) {
         try {
@@ -112,7 +112,7 @@ const update_site = async (campaignName) => {
         } else {
             console.log(`File '${fileName}' created successfully.`);
 
-            process.chdir('../TEMPLATE-1');
+            process.chdir(folderPath);
 
             const env = Object.assign({}, process.env, {
                 FIFTHTRY_SITE_WRITE_TOKEN: 'ab430fa2-1935-48a4-9894-e32f8e8749b5' // Replace this with your token value
@@ -134,4 +134,5 @@ const update_site = async (campaignName) => {
 };
 
 // Call the update_site function to run the script
-update_site("jiop"); // Replace with actual values
+update_site("rsbb","distribution/UrlDrop/template-1"); // Replace with actual values
+
